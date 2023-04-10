@@ -6,9 +6,7 @@ RUN apt-get install -y python3-numpy python3-scipy python3-pip build-essential g
 RUN apt-get install -y libboost-all-dev
 RUN pip3 install wheel pybind11==2.5.0
 RUN git clone https://gitee.com/cyan7/nsg.git
-RUN cp nsg/* /usr/local/nsg/
-RUN chmod a+x /usr/local/nsg/*
-RUN cd /usr/local/nsg/
+RUN cd nsg/
 RUN mkdir -p build && cd build && \
     cmake -DCMAKE_BUILD_TYPE=Release .. && \
     make -j $(nproc)
