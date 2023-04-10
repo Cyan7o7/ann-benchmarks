@@ -1,8 +1,8 @@
 float:
   any:
     nssg:
-      docker-tag: ann-benchmarks-ssg
-      module: ann_benchmarks.algorithms.ssg
+      docker-tag: ann-benchmarks-nssg
+      module: ann_benchmarks.algorithms.nssg
       constructor: NSSG
       base-args: ["@metric"]
       run-groups:
