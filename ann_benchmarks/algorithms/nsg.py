@@ -8,7 +8,7 @@ import numpy
 
 
 class NSG(BaseANN):
-  def __init__(self, metric, param, save_index):
+  def __init__(self, metric, param):
     metric = str(metric)
     self.name = 'NSG(%s)' % (metric)
     self._metric = metric
