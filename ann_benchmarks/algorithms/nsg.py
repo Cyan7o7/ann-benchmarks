@@ -80,7 +80,7 @@ class NSG(BaseANN):
     SG=os.path.join(aIndex, 'grp')
     RE=os.path.join(aIndex, 'result')
     cmds = '/home/app/nsg/build/tests/test_nsg_optimized_search ' + str(fvecs) + ' '+ str(query) + ' ' + str(SG) + ' ' + str(
-      parmQue[0]) + ' ' + str(parmQue[1]) + ' ' + str(
+      v) + ' ' + str(n) + ' ' + str(
       RE)
     data = np.loadtxt(RE)
     with h5py.File("data.hdf5", "w") as f:
