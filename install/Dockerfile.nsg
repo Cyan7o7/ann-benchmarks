@@ -10,6 +10,7 @@ RUN git clone https://gitee.com/cyan7/ssg.git
 RUN ldconfig
 RUN cp ssg/ssg-knng nsg/
 WORKDIR nsg/
-RUN mkdir -p build && cd build && \
-    cmake -DCMAKE_BUILD_TYPE=Release .. && \
-    make -j $(nproc)
+RUN mkdir -p build 
+WORKDIR  build/ 
+RUN cmake -DCMAKE_BUILD_TYPE=Release ..
+RUN make -j
