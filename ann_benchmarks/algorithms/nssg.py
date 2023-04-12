@@ -1,6 +1,6 @@
 import os
 import struct
-
+from .base import BaseANN
 import h5py
 import numpy as np
 from \
