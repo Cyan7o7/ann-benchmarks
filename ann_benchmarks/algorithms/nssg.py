@@ -82,7 +82,7 @@ class NSSG(BaseANN):
     RE = os.path.join(aIndex, 'result')
     cmds = '/home/app/SSG/build/tests/test_ssg_optimized_search ' + str(fvecs) + ' ' + str(query) + ' ' + str(
       SG) + ' ' + str(
-      parmQue[0]) + ' ' + str(parmQue[1]) + ' ' + str(
+      v) + ' ' + str(n) + ' ' + str(
       RE)+ ' ' + str(parmQue[2])
     data = np.loadtxt(RE)
     with h5py.File("data.hdf5", "w") as f:
