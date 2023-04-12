@@ -9,14 +9,13 @@ import numpy
 
 
 class NSSG(BaseANN):
-  def __init__(self, metric, param, save_index):
+  def __init__(self, metric, param):
     metric = str(metric)
     self.name = 'SSG(%s)' % (metric)
     self._metric = metric
     self._paramE = param['paramE']
     self._paramS = param['paramS']
     self._paramQ = param['paramQ']
-    self._save_index = save_index
   def fit(self, X):
     if X.dtype != numpy.float32:
      X = X.astype(numpy.float32)
