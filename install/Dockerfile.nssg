@@ -15,3 +15,4 @@ WORKDIR /home/app/SSG
 RUN mkdir -p build
 WORKDIR build 
 RUN cmake .. && make -j
+WORKDIR /home/app
