@@ -5,7 +5,7 @@ import numpy as np
 from \
   sklearn import preprocessing
 import numpy
-
+from .base import BaseANN
 
 class NSG(BaseANN):
   def __init__(self, metric, param):
